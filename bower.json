@@ -1,0 +1,24 @@
+{
+  "name": "Tourist_places",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Rumman123/tourist_places",
+  "authors": [
+    "rumman khan <rumman.khan@tothenew.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

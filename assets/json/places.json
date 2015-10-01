@@ -1,0 +1,68 @@
+
+[
+  {
+    "imageUrl":"assets/images/goa.jpg",
+    "name":"Goa",
+    "id":"goa",
+    "snippet":"Land near sea",
+    "popular":2
+  },
+  {
+    "imageUrl":"assets/images/delhi.jpg",
+    "name":"Delhi",
+    "id":"delhi",
+    "snippet":"Capital of India",
+    "popular":5
+  },
+  {
+    "imageUrl":"assets/images/rajasthan.jpg",
+    "name":"Rajasthan",
+    "id":"rajasthan",
+    "snippet":"Desert Land",
+    "popular":3
+  },
+  {
+    "imageUrl":"assets/images/jammu.jpg",
+    "name":"Jammu & Kashmir",
+    "id":"J&K",
+    "snippet":"heaven on earth",
+    "popular":1
+  },
+  {
+    "imageUrl":"assets/images/himachal.jpg",
+    "name":"Shimla",
+    "id":"shimla",
+    "snippet":"land of mountains",
+    "popular":4
+  },
+  {
+    "imageUrl":"assets/images/kerala.jpg",
+    "name":"Kerala",
+    "id":"kerala",
+    "snippet":"Literate City",
+    "popular":6
+  },
+  {
+    "imageUrl":"assets/images/kolkata.jpg",
+    "name":"kolkata",
+    "id":"kolkata",
+    "snippet":"city of fun",
+    "popular":8
+  },
+  {
+    "imageUrl":"assets/images/lakshadeep.jpg",
+    "name":"lakshadeep",
+    "id":"lakshadeep",
+    "snippet":"island city",
+    "popular":7
+  },
+  {
+    "imageUrl":"assets/images/nagaland.jpg",
+    "name":"nagaland",
+    "id":"nagaland",
+    "snippet":"Land of tribes",
+    "popular":9
+  }
+
+
+]
