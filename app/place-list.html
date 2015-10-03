@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2">
+            Search:<input type="text" ng-model="query">
+            Sort By: <select ng-model="order">
+            <option value="name">Alphabetical</option>
+            <option value="popular">Popularity</option>
+        </select>
+        </div>
+        <div class="col-md-10">
+
+            <ul>
+                <li ng-repeat="place in places |filter:query |orderBy:order:reverse">
+                    <div class="place_container">
+                        <a href="#/places/{{place.id}}"><img src="{{place.imageUrl}}" alt="{{place.id}}"></a>
+                        <span>{{place.name}}</span>
+                        <p>{{place.snippet}}</p></div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>

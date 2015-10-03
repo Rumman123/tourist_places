@@ -1,0 +1,40 @@
+<div class="container"><h1>Top 3 must visit places in </h1>
+<div class="place_heading">{{place.name}}</div>
+<div class="place_detail">{{place.detail}}</div>
+
+<div class="places_wrapper">
+    <div class="places_box">
+        <div class="image">
+            <img src="{{place.image1}}">
+        </div>
+        <div class="image_detail">
+            <h3>{{place.name1}}</h3>
+            <p>{{place.describe1}}</p>
+        </div>
+    </div>
+    <div class="places_box">
+        <div class="image">
+            <img src="{{place.image2}}">
+        </div>
+        <div class="image_detail">
+            <h3>{{place.name2}}</h3>
+            <p>{{place.describe2}}</p>
+        </div>
+    </div>
+    <div class="places_box">
+        <div class="image">
+            <img src="{{place.image3}}">
+        </div>
+        <div class="image_detail">
+            <h3>{{place.name3}}</h3>
+            <p>{{place.describe3}}</p>
+        </div>
+    </div>
+</div>
+</div>
+<li ng-repeat="place in places |filter:query |orderBy:order:reverse">
+    <div class="place_container">
+        <a href="#/places/{{place.id}}"><img src="{{place.imageUrl}}" alt="{{place.id}}"></a>
+        <span>{{place.name}}</span>
+        <p>{{place.snippet}}</p></div>
+</li>
