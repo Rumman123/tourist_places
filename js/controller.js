@@ -4,20 +4,15 @@
 
 var touristlistControllers = angular.module('touristlistControllers', []);
 
-touristlistControllers.controller('PlaceListCtrl', ['$scope', '$http',
-    function ($scope, $http) {
-        $http.get('assets/json/places.json').success(function(data) {
-            $scope.places = data;
-        });
-
-        $scope.order='popular'
+touristlistControllers.controller('PlaceListCtrl', ['$scope', 'Place',
+    function ($scope,Place) {
+            $scope.places = Place.query();
+            $scope.order='popular'
     }]);
 
-touristlistControllers.controller('PlaceDetailCtrl',['$scope','$http','$routeParams',
-function($scope,$http,$routeParams){
-$http.get('assets/json/'+$routeParams.placeId+'.json').success(function(option){
-    $scope.place=option;
-    console.log($scope.place);
-});
+touristlistControllers.controller('PlaceDetailCtrl',['$scope','Place','$routeParams',
+function($scope,Place,$routeParams){
+    $scope.place = Place.get({placeId: $routeParams.placeId});
+
 }
 ]);

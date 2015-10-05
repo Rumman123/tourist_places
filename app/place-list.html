@@ -13,7 +13,7 @@
                 <li ng-repeat="place in places |filter:query |orderBy:order:reverse">
                     <div class="place_container">
                         <a href="#/places/{{place.id}}"><img src="{{place.imageUrl}}" alt="{{place.id}}"></a>
-                        <span>{{place.name}}</span>
+                       <span> <a href="#/places/{{place.id}}">{{place.name}}</a></span>
                         <p>{{place.snippet}}</p></div>
                 </li>
             </ul>

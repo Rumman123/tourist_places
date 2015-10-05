@@ -4,12 +4,16 @@
 
 var touristplacesApp = angular.module('touristplacesApp', [
     'ngRoute',
-    'touristlistControllers'
+    'touristlistControllers','touristappServices'
 ]);
 
 touristplacesApp.config(['$routeProvider',
     function($routeProvider) {
         $routeProvider.
+            when('/places', {
+                templateUrl: 'app/place-list.html',
+                controller: 'PlaceListCtrl'
+            }).
             when('/places', {
                 templateUrl: 'app/place-list.html',
                 controller: 'PlaceListCtrl'
