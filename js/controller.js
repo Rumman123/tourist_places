@@ -16,3 +16,18 @@ function($scope,Place,$routeParams){
 
 }
 ]);
+touristlistControllers.controller('CarouselDemoCtrl',['$scope','Place','$routeParams',
+    function($scope,Place,$routeParams){
+        $scope.myInterval = 2000;
+        $scope.images = Place.get({placeId: $routeParams.placeId});
+
+    }
+]);
+touristlistControllers.controller('AboutCtrl',[
+    function(){
+    }
+]);
+touristlistControllers.controller('ContactCtrl',[
+    function(){
+    }
+]);

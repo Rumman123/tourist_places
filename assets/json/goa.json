@@ -1,6 +1,11 @@
-{
+{"pics": [{
+    "pic": "assets/images/jammu/ladakh.jpg"},{
+    "pic": "assets/images/jammu/Dal.jpg"},{
+    "pic": "assets/images/jammu/pahalgam.jpg"
+}],
     "name": "Goa",
     "detail": "Jammu and Kashmir consists of three regions: Jammu, the Kashmir Valley and Ladakh. Srinagar is the summer capital, and Jammu is the winter capital. The Kashmir valley is famous for its beautiful mountainous landscape, and Jammu's numerous shrines attract tens of thousands of Hindu pilgrims every year. Ladakh, also known as 'Little Tibet', is renowned for its remote mountain beauty and Buddhist culture. It is the only state in India with a Muslim-majority population.",
+
     "image1": "assets/images/jammu/ladakh.jpg",
     "name1": "Ladakh",
     "describe1": "Ladakh ('land of high passes') is a region in Jammu and Kashmir that currently extended from the Kuen Lun mountain range to the main Great Himalayas to the south, inhabited by people of Indo-Aryan and Tibetan descent.It is one of the most sparsely populated regions in Jammu and Kashmir and its culture and history are closely related to that of Tibet.",

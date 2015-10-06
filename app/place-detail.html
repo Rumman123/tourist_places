@@ -1,5 +1,18 @@
-<div class="container">
+<div ng-include="'app/header.html'"></div>
 
+    <div ng-controller="CarouselDemoCtrl" id="slides_control">
+        <div class="carousel-wrapper">
+            <carousel interval="myInterval">
+                <slide ng-repeat="image in images.pics" active="image.active">
+                    <img ng-src="{{image.pic}}">
+                    <div class="carousel-caption">
+                        <h4>Slide {{$index+1}}</h4>
+                    </div>
+                </slide>
+            </carousel>
+        </div>
+    </div>
+<div class="container">
 <div class="place_heading">{{place.name}}</div>
 <div class="place_detail">{{place.detail}}</div>
 <div class="divider"></div>
@@ -40,3 +53,4 @@
         <span>{{place.name}}</span>
         <p>{{place.snippet}}</p></div>
 </li>
+<div ng-include="'app/footer.html'"></div>

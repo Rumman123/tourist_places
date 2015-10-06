@@ -4,7 +4,7 @@
 
 var touristplacesApp = angular.module('touristplacesApp', [
     'ngRoute',
-    'touristlistControllers','touristappServices'
+    'touristlistControllers','touristappServices','ui.bootstrap'
 ]);
 
 touristplacesApp.config(['$routeProvider',
@@ -14,13 +14,18 @@ touristplacesApp.config(['$routeProvider',
                 templateUrl: 'app/place-list.html',
                 controller: 'PlaceListCtrl'
             }).
-            when('/places', {
-                templateUrl: 'app/place-list.html',
-                controller: 'PlaceListCtrl'
-            }).
             when('/places/:placeId', {
                 templateUrl: 'app/place-detail.html',
                 controller: 'PlaceDetailCtrl'
+
+            }).
+            when('/about', {
+                templateUrl: 'app/about.html',
+                controller: 'AboutCtrl'
+            }).
+            when('/contact', {
+                templateUrl: 'app/contact.html',
+                controller: 'ContactCtrl'
             }).
             otherwise({
                 redirectTo: '/places'

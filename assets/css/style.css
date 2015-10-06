@@ -15,7 +15,7 @@ margin-bottom:5px;
 .place_container span {
     font-weight: 600;
 }
-ul li {
+.place_list li {
     width: 30%;
     float: left;
     margin: 0 15px 15px 0;
@@ -61,4 +61,88 @@ ul{
 .divider {
     width: 100%;
     border: 1px solid #000;
+}
+#slides_control > div{
+    height: 400px;
+}
+img{
+    margin:auto;
+    width:100%;
+    height:400px;
+}
+#slides_control {
+   position:relative;
+    width:100%;
+    height:400px;
+
+}
+.item.text-center.ng-isolate-scope{height:400px;}
+.nav.navbar-nav {
+    width: 45%;
+}
+.place_view {
+    float: left;
+    width: 20%;
+}
+.place_view.navbar-form {
+    color: #fff;
+    font-weight: 600;
+    margin-top:12px;
+}
+.place_view select {
+    color: #000;
+    font-weight:normal;
+}
+.place_navigation{border-radius:0;margin-bottom:0;}
+.footer {
+    background-color: #222;
+    border: 1px solid #080808;
+    color: #fff;
+    display: block;
+    width: 100%;
+}
+.footer_wrapper {
+    margin: 0 auto;
+    text-align: center;
+    width: 309px;
+}
+.footer_wrapper a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer_nav li {
+    border-right: 1px solid #ccc;
+    float: left;
+    padding: 0 12px;
+}
+.footer_nav li:last-child {
+border:none;
+}
+.footer_middle {
+    float: left;
+    width: 100%;
+    margin-bottom:16px;
+}
+.footer_bottom {
+    float: left;
+    width: 100%;
+}
+.footer_social a {
+    background-color: #fff;
+    border-radius: 50%;
+    color: #000;
+    font-size: 14px;
+    padding: 8px 12px;
+}
+.footer_social > li {
+    float: left;
+    margin-right: 37px;
+    width:45px;
+}
+.footer_social > li:first-child {
+    margin-left: 18px;
+}
+.footer_social {
+    float: left;
+    width: 100%;
 }
