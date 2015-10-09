@@ -1,5 +1,5 @@
 <div ng-include="'app/header.html'"></div>
-
+<div class="wrapper">
     <div ng-controller="CarouselDemoCtrl" id="slides_control">
         <div class="carousel-wrapper">
             <carousel interval="myInterval">
@@ -47,10 +47,6 @@
     </div>
 </div>
 </div>
-<li ng-repeat="place in places |filter:query |orderBy:order:reverse">
-    <div class="place_container">
-        <a href="#/places/{{place.id}}"><img src="{{place.imageUrl}}" alt="{{place.id}}"></a>
-        <span>{{place.name}}</span>
-        <p>{{place.snippet}}</p></div>
-</li>
+
+    </div>
 <div ng-include="'app/footer.html'"></div>

@@ -1,26 +1,36 @@
 <div ng-include="'app/header.html'"></div>
 <div class="container-fluid">
+    <div class="wrapper_home">
+        <div class="awesome_filters"><div class="awesome_filters_inner">
+            <div class="sort">Sort By: <select ng-model="order">
+                <option value="name">Alphabetical</option>
+                <option value="popular">Popularity</option>
+            </select></div>
+            <div class="welcome_text">Welcome To IndiaAwesome.com</div>
+            <div class="search">  <form role="search" class="navbar-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Search" class="form-control" ng-model="query">
+                </div>
+            </form></div>
+           </div></div>
     <div class="row">
-        <div class="col-md-2">
-            Search:<input type="text" ng-model="query">
-            Sort By: <select ng-model="order">
-            <option value="name">Alphabetical</option>
-            <option value="popular">Popularity</option>
-        </select>
-        </div>
-        <div class="col-md-10">
+
+        <div class="col-md-12 awesome_places">
 
             <ul class="place_list">
                 <li ng-repeat="place in places |filter:query |orderBy:order:reverse">
-                    <div class="place_container">
-                        <a href="#/places/{{place.id}}"><img src="{{place.imageUrl}}" alt="{{place.id}}"></a>
-                       <span> <a href="#/places/{{place.id}}">{{place.name}}</a></span>
-                        <p>{{place.snippet}}</p></div>
+                    <ngplace></ngplace>
                 </li>
             </ul>
+
         </div>
-
     </div>
-
+    </div>
 </div>
+
 <div ng-include="'app/footer.html'"></div>
+<script type="text/javascript">
+
+        $(".awesome_filters").delay(500).css("display","block");
+        console.log(">>>>>>");
+</script>

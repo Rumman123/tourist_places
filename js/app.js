@@ -2,33 +2,38 @@
  * Created by Aayush Gupta on 10/2/2015.
  */
 
-var touristplacesApp = angular.module('touristplacesApp', [
+var IndiAwesomeApp = angular.module('IndiAwesomeApp', [
     'ngRoute',
-    'touristlistControllers','touristappServices','ui.bootstrap'
+    'IndiAwesomeControllers','IndiAwesomeServices','ui.bootstrap'
 ]);
 
-touristplacesApp.config(['$routeProvider',
+IndiAwesomeApp.config(['$routeProvider',
     function($routeProvider) {
         $routeProvider.
             when('/places', {
                 templateUrl: 'app/place-list.html',
-                controller: 'PlaceListCtrl'
+                controller: 'HomeCtrl',
+                activetab:'places'
             }).
             when('/places/:placeId', {
                 templateUrl: 'app/place-detail.html',
-                controller: 'PlaceDetailCtrl'
+                controller: 'PlaceDetailCtrl',
+                activetab:'places'
 
             }).
             when('/about', {
                 templateUrl: 'app/about.html',
-                controller: 'AboutCtrl'
+                controller: 'AboutCtrl',
+                activetab:'about'
             }).
             when('/contact', {
                 templateUrl: 'app/contact.html',
-                controller: 'ContactCtrl'
+                controller: 'ContactCtrl',
+                activetab:'contact'
             }).
             otherwise({
-                redirectTo: '/places'
+                redirectTo: '/places',
+
             });
     } ]);
 

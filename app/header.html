@@ -1,32 +1,47 @@
-<nav role="navigation" class="navbar navbar-inverse place_navigation">
-    <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a href="#/places" class="navbar-brand">IndiAwesome</a>
-    </div>
-    <!-- Collection of nav links, forms, and other content for toggling -->
-    <div id="navbarCollapse" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="#/places">Home</a></li>
-            <li><a href="#/about">About us</a></li>
-            <li><a href="#/contact">Contact us</a></li>
-
-        </ul>
-        <form class="place_view navbar-form"> Sort By: <select ng-model="order">
-            <option value="name">Alphabetical</option>
-            <option value="popular">Popularity</option>
-        </select></form>
-        <form role="search" class="navbar-form navbar-right">
-            <div class="form-group">
-                <input type="text" placeholder="Search" class="form-control" ng-model="query">
+<!--<div ng-controller="MyCtrl">-->
+    <nav role="navigation" class="navbar navbar-inverse place_navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#/places" class="navbar-brand">IndiAwesome</a>
             </div>
-        </form>
+            <!-- Collection of nav links, forms, and other content for toggling -->
+            <div id="navbarCollapse" class="collapse awesome_nav navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li ng-class="{active:$route.current.activetab=='places'}"><a href="#/places">Home</a></li>
+                    <li ng-class="{active:$route.current.activetab=='about'}"><a href="#/about">About us</a></li>
+                    <li ng-class="{active:$route.current.activetab=='contact'}"><a href="#/contact">Contact us</a></li>
 
-    </div></div>
-</nav>
+                </ul>
+
+<div class="modal_up">
+    <div ng-controller="ModalCtrl">
+
+        <script type="text/ng-template" id="modal.html">
+            <div class="modal-header"><h3 class="modal-title">IndiAwesome.com</h3></div>
+            <div class="modal-body"><ul><li ng-repeat="item in items">
+                <a href="#" ng-click="$event.preventDefault(); selected.item = item">{{ item }}</a>
+            </li></ul>
+                <div ng-show="selected">Selection from a modal: {{ selected }}</div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+                <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+            </div>
+
+        </script>
+
+        <div class="hsow">    <button type="button" class="pop_open" ng-click="open()"><i class="fa fa-share-square-o"></i></button>
+
+        </div></div>
+</div>
+</div>
+            </div>
+
+    </nav><!--</div>-->
